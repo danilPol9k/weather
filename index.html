@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div class="wrapper" id="weather-data">
+        <div class="header">
+            <a><img src="/images/Account.png" alt="" class="account"></a>
+            <div class="account-popup">
+                <a href="registration.html" class="account-logout-link">Выйти из аккаунта</a>
+              </div>
+            <input type="text" id="city-input" placeholder="Введите город">
+            <button id="search-button"><img src="/images/search.png" alt="" class="search"></button>
+        </div>
+        <div class="weather-block">
+            <img src="/images/sun and cloud.png" alt="" class="weather-block__sun">
+            <h3 class="weather-block__temp">t°</h3>
+            <p class="weather-block__feelTemp">ощущается как</p>
+            <p class="weather-block__city">Город</p>
+        </div>
+        <div class="info-wrapper">
+            <div class="sunrise-wrapper">
+            <img src="/images/Sunrise.png" alt="" class="sunrise">
+            <span class="sunrise-time common">00:00</span>
+        </div>
+        <div class="line1"></div>
+        <div class="wind-wrapper">
+            <img src="/images/Wind.png" alt="" class="wind">
+            <span class="wind-speed common">0,0 м/с</span>
+        </div>
+        <div class="line2"></div>
+        <div class="probability-wrapper">
+            <img src="/images/Drop.png" alt="" class="probability">
+            <span class="probability-percent common">0%</span>
+        </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registration</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="registration.js" defer></script>
+</head>
+<body>
+    <div class="reg-wrapper">
+        <img src="/images/Weather Application.png" alt="" class="logo">
+        <p class="logo-text">WeatherGo</p>
+        <h3 class="reg-title">Регистрация</h3>
+        <p id="message"></p>
+        <div class="input-wrapper">
+            <form onsubmit="validateRegistration(event)" id="registrationForm">
+                <input type="text" id="username" required placeholder="Имя">
+                <input type="password" id="password" required placeholder="Пароль"><span class="eye"></span>
+                <input type="email" id="email" required placeholder="E-mail">
+                <p class="reg-text">Уже есть аккаунт? <a href="login.html" class="reg-text__login">Войти</a></p>
+                <button type="submit" class="form-btn">Зарегистрироваться</button>
+            </form>
+            <div class="check-wrapper">
+                <input type="checkbox" id="checkbox">
+                <span class="check-span">Я ознакомлен и согласен с политикой конфенденциальности</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,485 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Kreon:wght@300..700&family=Yeseva+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&family=Karantina:wght@300;400;700&family=Poiret+One&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+p {
+    color: rgba(53, 117, 145, 1);
+}
+
+span {
+    color: rgba(53, 117, 145, 1);
+}
+
+h3 {
+    color: rgba(53, 117, 145, 1);
+}
+
+.wrapper {
+    max-width: 390px;
+    height: 844px;
+    background: rgba(194, 223, 249, 1);
+}
+
+.reg-wrapper {
+    max-width: 390px;
+    height: 844px;
+    background: rgba(194, 223, 249, 1);
+}
+
+.header {
+    display: flex;
+}
+
+.account {
+    width: 38px;
+    height: 35px;
+    margin-top: 11px;
+    margin-left: 3px;
+    margin-right: 3px;
+}
+
+#city-input {
+    width: 338px;
+    max-height: 37px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    padding-left: 16px;
+    border: 3px solid #268BAA;
+    border-radius: 10px;
+    margin-top: 8px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    font-size: 14px;
+    line-height: 16.94px;
+    font-family: "Inter", sans-serif;
+    font-weight: 100;
+    color: rgba(46, 49, 51, 1);
+}
+
+#city-input:focus {
+    border-color: #268BAA;
+    outline: none;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+#search-button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.search {
+    width: 20px;
+    height: 19px;
+    transform: translate(-36px, 6px);
+}
+
+.weather-block {
+    width: 328px;
+    height: 135px;
+    background: rgba(217, 250, 255, 1);
+    border: 3px solid #268BAA;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    margin-top: 269px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 104px;
+}
+
+.weather-block__sun {
+    transform: translate(10px, -100px);
+}
+
+.weather-block__temp {
+    font-family: "Kreon", serif;
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 50.4px;
+    color: rgba(53, 117, 145, 1);
+    transform: translate(180px, -192px);
+}
+
+.weather-block__feelTemp {
+    font-family: "Yeseva One", serif;
+    font-size: 12px;
+    line-height: 13.86px;
+    font-weight: 400;
+    color: rgba(53, 117, 145, 1);
+    transform: translate(170px, -175px);
+}
+
+.weather-block__city {
+    font-family: "Yeseva One", serif;
+    font-size: 20px;
+    line-height: 23.1px;
+    font-weight: 400;
+    color: rgba(54, 207, 255, 1);
+    transform: translate(30px, -160px);
+}
+
+.common {
+    font-family: "Kreon", serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 18.9px;
+    color: rgba(53, 117, 145, 1);
+}
+
+.info-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    transform: translateX(-10px);
+}
+
+.line1 {
+    height: 69px;
+    border: 1px solid rgba(255, 249, 249, 1);
+}
+
+.line2 {
+    height: 69px;
+    border: 1px solid rgba(255, 249, 249, 1);
+}
+
+.sunrise-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.wind-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.probability-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.probability-percent {
+    transform: translateY(7px);
+}
+
+.logo-text {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 17.55px;
+    color: rgba(18, 26, 208, 1);
+    padding-left: 2px;
+    margin-bottom: 52px;
+    font-family: "Poiret One", sans-serif;
+    text-shadow:
+        1px 0 0 rgba(18, 26, 208, 0.2),
+        0 1px 0 rgba(18, 26, 208, 0.2),
+        -1px 0 0 rgba(18, 26, 208, 0.2),
+        0 -1px 0 rgba(18, 26, 208, 0.2);
+}
+
+.reg-title {
+    text-align: center;
+    font-family: "Karantina", system-ui;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 30.36px;
+    color: rgba(69, 118, 244, 1);
+    margin-bottom: 125px;
+}
+
+.eye {
+    background-image: url(/images/open.png);
+    width: 24px;
+    height: 24px;
+    display: block;
+    background-repeat: no-repeat;
+    background-size: contain;
+    transform: translate(330px, -50px);
+    cursor: pointer;
+}
+
+.input-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+#username {
+    width: 100%;
+    max-width: 327px;
+    max-height: 59px;
+    background: rgba(217, 250, 255, 1);
+    border: 3px solid #268BAA;
+    color: rgba(106, 109, 111, 1);
+    font-family: "Inter", sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 24.2px;
+    margin-bottom: 33px;
+    border-radius: 20px;
+    padding-top: 12px;
+    padding-bottom: 18px;
+    padding-left: 22px;
+    margin-left: 15px;
+}
+
+#password {
+    width: 100%;
+    max-width: 327px;
+    max-height: 59px;
+    background: rgba(217, 250, 255, 1);
+    border: 3px solid #268BAA;
+    color: rgba(106, 109, 111, 1);
+    font-family: "Inter", sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 24.2px;
+    margin-bottom: 9px;
+    border-radius: 20px;
+    padding-top: 13px;
+    padding-bottom: 17px;
+    padding-left: 22px;
+    margin-left: 15px;
+}
+
+#email {
+    width: 100%;
+    max-width: 322px;
+    max-height: 59px;
+    background: rgba(217, 250, 255, 1);
+    border: 3px solid #268BAA;
+    color: rgba(106, 109, 111, 1);
+    font-family: "Inter", sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 24.2px;
+    margin-bottom: 18px;
+    border-radius: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 26px;
+    margin-left: 15px;
+}
+
+#email:focus {
+    border-color: #268BAA;
+    outline: none;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+#password:focus {
+    border-color: #268BAA;
+    outline: none;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+#username:focus {
+    border-color: #268BAA;
+    outline: none;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+#message {
+    font-family: "Inknut Antiqua", serif;
+    font-weight: 600;
+    color: rgba(94, 90, 90, 1);
+    font-size: 17px;
+    line-height: 23.84px;
+    text-align: center;
+    max-width: 285px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 19px;
+    margin-top: -20px;
+}
+
+.form-btn {
+    font-family: "Inknut Antiqua", serif;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 56.74px;
+    text-align: center;
+    background: linear-gradient(92.29deg, #83A4F9 6.14%, #55D9EB 94.08%);
+    border: none;
+    color: rgba(106, 109, 111, 1);
+    border-radius: 20px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    padding: 0px 75px 00px 73px;
+    margin-left: 15px;
+    margin-bottom: 48px;
+    cursor: pointer;
+}
+
+.check-wrapper {
+    display: flex;
+    align-items: flex-end;
+}
+
+input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    position: relative;
+    margin-left: 47px;
+    margin-right: 14px;
+}
+
+
+input[type="checkbox"]::before {
+    content: '';
+    display: inline-block;
+    width: 21px;
+    height: 25px;
+    background: rgba(194, 223, 249, 1);
+    border: 1.71px solid rgba(0, 0, 0, 1);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+}
+
+
+input[type="checkbox"]:checked::before {
+    background: rgba(194, 223, 249, 1);
+    border: 1.71px solid rgba(0, 0, 0, 1);
+}
+
+input[type="checkbox"]:checked::after {
+    content: '✓';
+    display: inline-block;
+    color: rgba(0, 0, 0, 1);
+    position: absolute;
+    left: 5px;
+    top: 0px;
+    font-size: 20px;
+}
+
+.check-span {
+    font-family: "Inknut Antiqua", serif;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 17.99px;
+    color: rgba(94, 90, 90, 1);
+}
+
+.login-title {
+    margin-bottom: 109px;
+}
+
+.inp-num {
+    width: 69px;
+    height: 69px;
+    border: none;
+    background: rgba(177, 245, 255, 0.9);
+    box-shadow: -4px -4px 10px 0px rgba(0, 0, 0, 0.25) inset, 4px 4px 10px 0px rgba(0, 0, 0, 0.25) inset, 4px 4px 16px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    color: rgba(106, 109, 111, 1);
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24.2px;
+    text-align: center;
+}
+
+.numbers-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 17px;
+    margin-bottom: 55px;
+}
+
+#login-text {
+    font-family: "Inknut Antiqua", serif;
+    font-weight: 600;
+    color: rgba(94, 90, 90, 1);
+    font-size: 17px;
+    line-height: 23.84px;
+    text-align: start;
+    max-width: 285px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    margin-top: 65px;
+}
+
+.login-btn {
+    font-family: "Inknut Antiqua", serif;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 56.74px;
+    text-align: center;
+    background: linear-gradient(92.29deg, #83A4F9 6.14%, #55D9EB 94.08%);
+    border: none;
+    color: rgba(106, 109, 111, 1);
+    border-radius: 20px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    padding: 0px 75px 00px 73px;
+    margin-left: 28px;
+    margin-bottom: 48px;
+    cursor: pointer;
+    width: 327px;
+    height: 57px;
+}
+
+.inp-num:focus {
+    border-color: rgba(177, 245, 255, 0.9);
+    outline: none;
+    box-shadow: -4px -4px 10px 0px rgba(0, 0, 0, 0.25) inset, 4px 4px 10px 0px rgba(0, 0, 0, 0.25) inset, 4px 4px 16px 0px rgba(0, 0, 0, 0.1);
+}
+
+.reg-text {
+    font-family: "Inknut Antiqua", serif;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 43.84px;
+    text-align: center;
+    margin-bottom: 19px;
+    color: rgba(94, 90, 90, 1);
+}
+
+.reg-text__login {
+    color: rgb(48, 51, 53);
+    font-weight: 600;
+}
+
+.account-popup {
+    display: none;
+    position: absolute;
+    top: 41px;
+    left: 0;
+    width: 200px;
+    background: rgba(194, 223, 249, 1);
+    border: 1px solid #268BAA;
+    z-index: 100;
+    border-radius: 20px;
+}
+
+.account-logout-link {
+    display: block;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: rgb(48, 51, 53);
+}
+
+.account-logout-link:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="login.js" defer></script>
+</head>
+<body>
+    <div class="reg-wrapper">
+        <img src="/images/Weather Application.png" alt="" class="logo">
+        <p class="logo-text">WeatherGo</p>
+        <h3 class="reg-title login-title">Вход</h3>
+        <div class="input-wrapper">
+            <form onsubmit="validateRegistration(event)" id="registrationForm">
+                <input type="email" id="email" required placeholder="E-mail">
+                <p id="login-text">Введите ваш E-mail. На вашу почту мы отправим СМС с кодом подтверждения.</p>
+                <div class="numbers-wrapper">
+                    <input type="number" min="0" max="9" class="inp-num">
+                    <input type="number" min="0" max="9" class="inp-num">
+                    <input type="number" min="0" max="9" class="inp-num">
+                    <input type="number" min="0" max="9" class="inp-num">
+                </div>
+                <button type="submit" class="form-btn login-btn">Войти</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
